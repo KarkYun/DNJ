@@ -116,6 +116,7 @@ body {
 }
  .hero .hero-content .box h1{
     font-size: 3rem;
+    border-radius: 1rem;
     color: #333;
     margin-bottom: 1rem;
  }
@@ -130,14 +131,14 @@ body {
     font-size: 1rem;
     color: #070707;
     margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    border: 0.15rem solid #10221b;
+    padding: 0.5rem 1.2rem;
+    border: 0.15rem solid #000000;
     cursor: pointer;
 
  }
 
  .hero .hero-content .box .btn:hover {
-    background: #00000088;
+    background: #000000;
     color: #fff;
 }
 
