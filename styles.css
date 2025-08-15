@@ -391,6 +391,16 @@ body {
     padding: 0.2rem 1.3rem;
   }
 
+  /* navbar size */
+  .navigation{
+    padding:0.4rem 2.2rem;
+  }
+
+  .navigation .navbar .icons{
+    font-size: 1.2rem;
+
+  }
+
   /* Hide navbar by default on mobile */
   .navigation .navbar {
     position: fixed;
