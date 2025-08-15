@@ -96,20 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Handle search form submission (you can customize this)
-    const searchFormElement = searchForm.querySelector('form');
-    searchFormElement.addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent default form submission
-        const searchQuery = searchBox.value.trim();
+    // // Handle search form submission (you can customize this)
+    // const searchFormElement = searchForm.querySelector('form');
+    // searchFormElement.addEventListener('submit', function(e) {
+    //     e.preventDefault(); // Prevent default form submission
+    //     const searchQuery = searchBox.value.trim();
         
-        if (searchQuery) {
-            // Add your search logic here
-            console.log('Searching for:', searchQuery);
-            // For now, just close the search form
-            searchForm.classList.remove('active');
-            // You can add actual search functionality here
-        }
-    });
+    //     if (searchQuery) {
+    //         // Add your search logic here
+    //         console.log('Searching for:', searchQuery);
+    //         // For now, just close the search form
+    //         searchForm.classList.remove('active');
+    //         // You can add actual search functionality here
+    //     }
+    // });
 });
 
 // Search bar
