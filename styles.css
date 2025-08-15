@@ -13,6 +13,32 @@
 
 body {
   background-color: #f4f4f4;
+  padding-top: 80px;
+}
+
+/* Navigation bar */
+.navigation {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navbar a {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+.navigation .navbar a:hover {
+  background: #f4f4f4;
 }
 
 /*footer begins*/
@@ -118,7 +144,14 @@ body {
   font-size: 0.9rem;
 }
 
+
 @media (max-width: 768px) {
+  .navigation .navbar a{
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: left;
+    margin: auto;
+  }
   .footer-content {
     grid-template-columns: 1fr;
     padding: 0 1rem;
