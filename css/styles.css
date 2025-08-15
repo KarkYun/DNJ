@@ -476,6 +476,18 @@ body {
     padding: 0.05rem 0;
   }
 
+   .footer-bottom {
+    height: 5vh;
+  }
+
+  .footer-bottom p{
+    margin-top: -0.5rem
+  }
+
+   .footer-bottom .footer-credit p{
+    font-size:0.7rem;
+  }
+
   .contact-info p {
     font-size: 0.5rem;
     margin-bottom: 0.2rem;
