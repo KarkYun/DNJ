@@ -130,7 +130,7 @@ body {
    .hero .hero-content .box .box2 h1{
     font-size: 3rem;
     border-radius: 1rem;
-    color: #000000;
+    color: #eb9b24;
     margin-bottom: 1rem;
     margin-top:-1.5rem;
  }
@@ -365,7 +365,25 @@ body {
   #menu-btn {
     display: block !important;
   }
-  
+
+  .hero .hero-content .box .box1 h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero .hero-content .box .box2 h1 {
+    font-size: 2.2rem;
+  }
+
+   .hero .hero-content .box p {
+    font-size: 0.9rem;
+    
+  }
+
+   .hero .hero-content .box .btn{
+    font-size: 0.8rem;
+    padding: 0.2rem 1.3rem;
+  }
+
   /* Hide navbar by default on mobile */
   .navigation .navbar {
     position: fixed;
@@ -409,7 +427,24 @@ body {
     padding: 0 1rem;
   }
   
+  .footer .footer-content .footer-section h3{
+    font-size: 1.1rem;
+  }
+
+  .footer .footer-content .footer-section p{
+    font-size: 0.9rem;
+    align-items: left;
+  }
+
   .social-links {
+    justify-content: flex-start;
+  }
+
+  .social-links a{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 }
