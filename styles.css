@@ -104,8 +104,9 @@ body {
 
 /* header */
 .hero .hero-content .box {
-    background: linear-gradient(rgba(22, 20, 20, 0.45), rgba(94, 94, 94, 0.397)), url(images/Beach.webp);
+    /* background: linear-gradient(rgba(22, 20, 20, 0.45), rgba(94, 94, 94, 0.397)), url(images/Beach.webp); */
     background-size: cover;
+    background: linear-gradient(135deg, #28639e 0%, #3c6894 100%);
     background-position: center;
     height: 88.2vh;
     display: flex;
@@ -366,16 +367,22 @@ body {
     display: block !important;
   }
 
+  .hero .hero-content .box {
+    height: 30vh;
+    margin-top: -0.54rem;
+    position: relative;
+    top: 0;
+  }
   .hero .hero-content .box .box1 h1 {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 
   .hero .hero-content .box .box2 h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
    .hero .hero-content .box p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     
   }
 
