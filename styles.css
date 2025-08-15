@@ -114,6 +114,34 @@ body {
     align-items: center;
     text-align: center;
 }
+ .hero .hero-content .box h1{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+ }
+
+  .hero .hero-content .box p{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+ }
+
+   .hero .hero-content .box .btn{
+    font-size: 1rem;
+    color: #070707;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0.15rem solid #10221b;
+    cursor: pointer;
+
+ }
+
+ .hero .hero-content .box .btn:hover {
+    background: #00000088;
+    color: #fff;
+}
+
+/* Header ends */
 
 /* Search form styles */
 .search-form {
