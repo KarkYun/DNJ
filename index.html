@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-       
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <h2>DI NAT J</h2>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">       
 
       <!-- Home Section -->
      <header class="navigation">
@@ -22,23 +32,18 @@
             <a href="#blogs">Blogs</a>
         </nav>
 
-        <!-- <div class="icons">
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
-        </div> -->
+        </div>
     </header>
 
-    <!-- <div class="search-form">
-        <div id="close-search" class="fas fa-times"></div>
-        <form action="">
-            <input
-              type="search"
-              name=""
-              placeholder="search here..."
-              id="search-box"
-            />
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"> <style>#close-search { display: none; }</style></div>
+        <form action=""><input type="search" name="search" placeholder="search here..." id="search-box"/>
             <label for="search-box" class="fas fa-search"></label>
         </form>
-    </div> -->
+    </div>
     <!-- Home Section Ends -->
     <section class="hero">
         <div class="hero-content">
@@ -114,6 +119,8 @@
             <p>&copy; 2025 DI NAT J. All rights reserved.</p>
         </div>
     </footer>
+    </div> <!-- End of main-content -->
+     <script src="styles.js"></script>
 </body>
 </html>
 <!-- End of file: index.html -->

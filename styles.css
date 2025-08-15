@@ -16,6 +16,152 @@ body {
   padding-top: 80px;
 }
 
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #eb9b24 0%, #ffd580 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  text-align: center;
+  color: #fff;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.loader p {
+  font-size: 1rem;
+  opacity: 0.9;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.5; }
+}
+
+/* Hide main content initially */
+#main-content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#main-content.show {
+  opacity: 1;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.icons div {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.icons div:hover {
+    background: #f4f4f4;
+}
+
+/* Search form styles */
+.search-form {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    z-index: 999;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.search-form.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-form form {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #eb9b24;
+    border-radius: 25px;
+    outline: none;
+}
+
+.search-form label {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: #eb9b24;
+    cursor: pointer;
+}
+
+#close-search {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+#close-search:hover {
+    color: #eb9b24;
+}
+
 /* Navigation bar */
 .navigation {
   background: #fff;
@@ -32,13 +178,26 @@ body {
   justify-content: space-between;
 }
 
+.navigation .navbar {
+  display: flex;
+  gap: 1rem;
+}
+
 .navigation .navbar a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
+  color: #333;
+  transition: all 0.3s ease;
 }
 
 .navigation .navbar a:hover {
   background: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Hide menu button on desktop */
+#menu-btn {
+  display: none;
 }
 
 /*footer begins*/
@@ -146,12 +305,49 @@ body {
 
 
 @media (max-width: 768px) {
-  .navigation .navbar a{
-    flex-direction: column;
-    font-size: 1rem;
-    text-align: left;
-    margin: auto;
+  /* Show menu button on mobile */
+  #menu-btn {
+    display: block !important;
   }
+  
+  /* Hide navbar by default on mobile */
+  .navigation .navbar {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    transition: left 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Show navbar when active */
+  .navigation .navbar.active {
+    left: 0;
+  }
+  
+  .navigation .navbar a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+  }
+  
+  .navigation .navbar a:hover {
+    background: #eb9b24;
+    color: #fff;
+  }
+  
   .footer-content {
     grid-template-columns: 1fr;
     padding: 0 1rem;
