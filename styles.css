@@ -102,6 +102,19 @@ body {
     background: #f4f4f4;
 }
 
+/* header */
+.hero .hero-content .box {
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.397)), url(images/Beach.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Search form styles */
 .search-form {
     position: fixed;
