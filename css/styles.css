@@ -449,17 +449,29 @@ body {
   }
   
   .footer-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 1rem;
+    gap: 1rem;
   }
   
   .footer .footer-content .footer-section h3{
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .footer .footer-content .footer-section p{
-    font-size: 0.9rem;
-    align-items: left;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer .footer-content .footer-section ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer .footer-content .footer-section ul li a {
+    font-size: 0.85rem;
+    padding: 0.2rem 0;
   }
 
   .social-links {
