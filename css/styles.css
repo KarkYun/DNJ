@@ -427,7 +427,7 @@ body {
 /*footer begins*/
 .footer {
   /* background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); */
-  background:#041f4b;
+  background:#072452;
   color: #fff;
   padding: 3rem 0 0;
   margin-top: 3rem;
@@ -518,7 +518,7 @@ body {
 }
 
 .footer-bottom {
-  background: #d48806;
+  background: #cf8f1f;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 2rem;
@@ -526,7 +526,7 @@ body {
 }
 
 .footer-bottom p {
-  color: #bdc3c7;
+  color: #d3d8db;
   font-size: 0.9rem;
 }
 
