@@ -115,6 +115,83 @@ body {
     align-items: center;
     text-align: center;
 }
+/* Featured Section Styles */
+.featured {
+  background: #fff;
+  padding: 2rem 0;
+}
+.featured-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.featured-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #eb9b24;
+  margin-bottom: 2rem;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+.featured-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.featured-item:hover {
+  box-shadow: 0 4px 16px rgba(235, 155, 36, 0.15);
+}
+.featured-item img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.featured-item h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.featured-item .price {
+  font-size: 0.95rem;
+  color: #eb9b24;
+  margin-bottom: 0.5rem;
+}
+.featured-item .stars {
+  color: #eb9b24;
+  font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+  .featured-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .featured-grid {
+    gap: 1rem;
+  }
+  .featured-item {
+    padding: 0.5rem;
+  }
+  .featured-item img {
+    max-width: 80px;
+  }
+  .featured-item h3 {
+    font-size: 0.9rem;
+  }
+  .featured-item .price {
+    font-size: 0.8rem;
+  }
+  .featured-item .stars {
+    font-size: 0.7rem;
+  }
+}
  /* .hero .hero-content .box h1{
     font-size: 3rem;
     border-radius: 1rem;
@@ -192,6 +269,34 @@ body {
 } */
 
 .featured .btn:hover {
+    background: #000000;
+    color: #fff;
+}
+/* Featured ends */
+
+
+/* Featured page */
+.category{
+    padding: 4rem 2rem;
+    background: #f3f1f1;
+}
+
+.category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.category p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #666;
+    text-align: center;
+}
+
+.category .btn:hover {
     background: #000000;
     color: #fff;
 }
