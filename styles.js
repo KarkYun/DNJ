@@ -1,20 +1,3 @@
-// Loading screen functionality
-window.addEventListener('load', function() {
-    const loadingScreen = document.getElementById('loading-screen');
-    const mainContent = document.getElementById('main-content');
-    
-    // Hide loading screen and show main content after everything is loaded
-    setTimeout(function() {
-        loadingScreen.classList.add('fade-out');
-        mainContent.classList.add('show');
-        
-        // Remove loading screen from DOM after animation
-        setTimeout(function() {
-            loadingScreen.style.display = 'none';
-        }, 500);
-    }, 1000); // Show loading for at least 1 second
-});
-
 // Search functionality
 document.addEventListener('DOMContentLoaded', function() {
     const searchBtn = document.getElementById('search-btn');
