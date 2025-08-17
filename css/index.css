@@ -1,7 +1,7 @@
   
 /* header */
 .hero .hero-content .box {
-    background: linear-gradient(rgba(7, 7, 7, 0.479), rgba(75, 73, 73, 0.842)), url(/images/4195.jpg);
+    background: linear-gradient(rgba(7, 7, 7, 0.479), rgba(75, 73, 73, 0.842)), url(/images/4195\(1\).jpg);
     background-size: cover;
     /* background: linear-gradient(135deg, #15528f 0%, #34495e 100%); */
     /* background: #0661f3; */
@@ -195,7 +195,7 @@
 @media (max-width: 768px) {
 
   .hero .hero-content .box {
-    height: 72vh;
+    height: 80vh;
     margin-top: -1.5rem;
     position: relative;
     top: 0;
