@@ -1,7 +1,7 @@
   
 /* header */
 .hero .hero-content .box {
-    background: linear-gradient(rgba(7, 7, 7, 0.45), rgba(75, 73, 73, 0.76)), url(/images/beach.jpg);
+    background: linear-gradient(rgba(7, 7, 7, 0.479), rgba(75, 73, 73, 0.842)), url(/images/4195.jpg);
     background-size: cover;
     /* background: linear-gradient(135deg, #15528f 0%, #34495e 100%); */
     /* background: #0661f3; */
@@ -15,7 +15,7 @@
 }
 
   .hero .hero-content .box .box1 h2{
-    font-size: 2rem;
+    font-size: 2.1rem;
     border-radius: 1rem;
     color: #fafafa;
     margin-bottom: 1rem;
@@ -23,16 +23,15 @@
  
 
   .hero .hero-content .box .box1  h1{
-    font-size: 3rem;
+    font-size: 3.1rem;
     border-radius: 1rem;
     color: #eb9b24;
     margin-bottom: 1rem;
-    margin-top:-1.5rem;
-    font-weight:800;
+    margin-top: -1.5rem;
  }
 
   .hero .hero-content .box p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #fff;
     margin-bottom: 1rem;
  }
