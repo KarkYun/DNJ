@@ -13,4 +13,3 @@ DNJ is a simple web page designed to showcase products and provide contact infor
 
 ## Getting Started
 Open `index.html` in your browser to view the site. For more information, see the About page.
-h
